@@ -1,0 +1,9 @@
+#password list check
+password = "$pring"
+with open("seasons.txt", "r") as file:
+    for line in file:
+        guess = line.strip()
+    
+        if guess == password:
+            print("Password found:", guess)
+            break
